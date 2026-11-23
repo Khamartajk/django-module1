@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Django Day-3{% endblock %}</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: rgb(42, 42, 233);
+        padding:30px;
+        color:white;
+        
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OneSchool Project</h1>
+        <h3>Header Section</h3>
+        <nav>
+            <a href="/home/">Home</a> |
+            <a href="/add/">Add Numbers</a>
+        </nav>
+        <hr>
+    </header>
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <footer>
+        <hr>
+        <h3>FOOTER section</h3>
+        <p>OneSchool Django Course</p>
+    </footer>
+</body>
+</html>
+
