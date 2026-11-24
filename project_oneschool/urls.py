@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('oneschool.urls')),
     path('home/', include('home.urls')),
     path('accounts/', include('accounts.urls')),
+    path('contacts/', include('contacts.urls')),
 ]
